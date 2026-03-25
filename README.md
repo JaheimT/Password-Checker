@@ -27,10 +27,11 @@ Hard to decipher (common words or simple patterns)
 - produce strenght rating 
 
 ## What I Struggled With
-
+[1] how to keep track of the charicter lenght of the users password
 
 
 ## How I Solved It
+implemeted Len() function and used that to calulate the character lenght of the users password
 
 
 
