@@ -1,42 +1,42 @@
-# Password-Checker
-A python script that evaluates a users password strength. built to hone my understanding of conditionals and string handling. 
-------------------------------------------------------------------------------------------------------------------------------
-## Goals
-Build a tool that checks password strenght
+Password-Checker
 
-## instail thoughts (what makes a good password)
+A Python script that evaluates a user's password strength. built to hone my understanding of conditionals and string handling.
+
+Goals
+
+Build a tool that checks password strength
+
+initial thoughts (what makes a good password)
+
 Length and complexity
 
- - 8-12 characters
-
- - Use of numbers and symbols
+* 8-12 characters
+* Use of numbers and symbols
 
 Hard to decipher (common words or simple patterns)
 
- - I acknowledge there's a trade-off between security and memorability, but for the initial start of this project, I will try to keep it basic
+* I acknowledge there’s a trade-off between security and memorability, but for the initial start of this project, I will try to keep it basic.
 
-## Code broken down
-- Get user input 
+Code broken down
 
-- check length 
+* Get user input
+* check length
+* Check for numbers
+* Check for symbols
+* produce strength rating
 
-- check for numbers 
+What I Struggled With
 
-- check for symbols
+1. How to keep track of the character length of the user's password
+2. How to know if there are numbers in the password.
+2.1. But then I ran into the problem of isdigit() checking to see if the whole string was made of numbers instead of looking for a single character
 
-- produce strenght rating 
+How I Solved It
 
-## What I Struggled With
-1. how to keep track of the charicter lenght of the users password
-2. how to know if theres numbers in the password.
+1. Implemented the Len() function and used it to calculate the character length of the user's password
+2. implementing the isdigit() method, which returns true or false depending on whether numbers are found within the user's password
+2.1 I had to implement a generator expression that used any() to check each character until a digit is found
 
-## How I Solved It
-1. implemeted Len() function and used that to calulate the character lenght of the users password
-2. implementing the isdigit() method which reads true or false depeding on if numbers are found within the users password
+What I Learned
 
-
-## What I Learned
-
-
-
-## Future Improvements
+Future Improvements
