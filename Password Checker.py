@@ -1,13 +1,14 @@
 # user inputs password
 password = (input("enter your password: "))
 # checks length of password
+SC = """!@#$%^&*(_+?-+)"""
 if 8 <= len(password) <= 16:
-    print("password accepted")
     if any(char.isdigit() for char in password):
-        print("password accepted")
         if any(char.isupper() for char in password):
-            print("password accepted")
-
+            if any(char in SC for char in password):
+                print ("password accepted")
+            else:
+                print("password must contain symbols")
         else:
             print("password must contain uppercase charecters")
     else:
