@@ -38,5 +38,7 @@ How I Solved It
 2.1 I had to implement a generator expression that used any() to check each character until a digit is found
 
 What I Learned
-
+- methods such as,isdigit(),len() and isupper()
+- generator expression
+-
 Future Improvements
